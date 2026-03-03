@@ -93,10 +93,10 @@ public class ProductoRepository {
     }
 
     public List<Producto> obtenerProductosActivos(){
-        List<Producto>activos;
+        List<Producto> activos = new ArrayList<>();
         for (Producto prod : productos){
             if (prod.isActivo()){
-                activos.add(prod)
+                activos.add(prod);
             }
         }
         return activos; 
